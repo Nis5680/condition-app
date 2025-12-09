@@ -10,14 +10,19 @@ export class App {
 
   display=true;
   x=10;
-  // hide() {
-  //   this.display = false;
-  // }
-  // show() {
-  //   this.display = true;
-  // }
+  togglediv=true;
+
+   hide() {
+     this.display = false;
+   }
+   show() {
+     this.display = true;
+   }
 
   toggle() {
     this.display = !this.display;
+  }
+  toggletwo() {
+    this.togglediv = !this.togglediv;
   }
 }
