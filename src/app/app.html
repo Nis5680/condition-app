@@ -19,12 +19,12 @@
 
 <hr/>
 
-<button (click)="toggletwo()">toggle 2 div</button>
+<button (click)="toggletwo()">{{togglediv?'Show green Div':'Show gold Div'}}</button>
 @if(togglediv){
   <div style="width: 200px; height: 200px; background-color: gold;">
   </div>
 }
 @else {
-  <div style="width: 200px; height: 200px; background-color: orange;">
+  <div style="width: 200px; height: 200px; background-color: green;">
   </div>
 }
